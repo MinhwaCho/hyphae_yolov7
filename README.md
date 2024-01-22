@@ -24,9 +24,15 @@ python detect.py --weights runs/train/yolov7-custom/weights/best.pt -- source ./
 
   ### 2-3. 테스트 결과 해석
   - runs/detect/{테스트_이미지_저장_디렉터리} 에 위치한 이미지
+ 
   - runs/detect/{테스트_이미지_저장_디렉터리}/labels
+    
 &nbsp;&nbsp; 예시: 3 0.34375 0.220313 0.01875 0.028125 0.256104
+
 &nbsp;&nbsp; - 구성: 카테고리종류, center_x, center_y, width, height, confidence
+
 &nbsp;&nbsp; - 이때, (center_x, center_y, width, height) 는 0~1 사이의 값; 이미지 사이즈 크기로 나누어 정규화된 값
+
 &nbsp;&nbsp; - 카테고리종류는 data.yaml에서 확인 가능 (예: 0 = CONTAM, 1 = aging, 2 = imbalance, 3 = watermark)
+
 &nbsp;&nbsp; - Confidence는 검출한 것에 대한 정확도
