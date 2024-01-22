@@ -1,0 +1,927 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270037.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [       1.17      1.1662]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270043.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [     1.2178      1.2291]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270066.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [       1.08      1.1091      1.0031]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270068.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [     1.0744]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270069.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [     1.0678      1.2075      1.2347]
+[34m[1mval: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/val/images/A2303210004.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [     1.0425      1.0575]
+[34m[1mtrain: [39m[22mScanning /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/labels.cache
+[34m[1mval: [39m[22mScanning /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/val/labels.cache...
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Plotting labels to runs/detect/train5/labels.jpg...
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.001667, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+500 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+      1/500      9.29G      2.415       3.94      1.845        802        640:
+      1/500      9.29G      2.351      3.808      1.788        243        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]
+
+      2/500      8.92G      2.157      3.035      1.558        742        640:
+                   all        107        938     0.0128      0.479      0.034     0.0147
+      2/500      9.51G       2.09      2.867      1.531        213        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+      3/500      8.69G      1.906      2.498      1.461        845        640:
+                   all        107        938     0.0125      0.473     0.0644     0.0271
+      3/500      9.15G      1.907      2.473      1.457        245        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      4/500      8.98G      1.893       2.41      1.463        790        640:
+                   all        107        938      0.303     0.0238     0.0304     0.0134
+      4/500      8.99G      1.883      2.394      1.471        263        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      5/500      8.41G      1.866      2.378      1.458        629        640:
+                   all        107        938     0.0238     0.0847      0.019    0.00821
+      5/500      8.88G      1.866      2.338      1.457        262        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      6/500      9.37G      1.895      2.328      1.469        819        640:
+                   all        107        938      0.113     0.0546     0.0408     0.0174
+      6/500      9.38G      1.882      2.326      1.469        236        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      7/500      8.32G      1.854      2.259      1.439        817        640:
+      7/500      8.33G      1.854      2.246      1.429        278        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      8/500      8.67G      1.871      2.278      1.456        868        640:
+      8/500      8.68G      1.857      2.231      1.455        177        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      9/500      9.68G      1.889      2.224      1.459        245        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.238      0.183     0.0967      0.041
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+     10/500      9.04G      1.831      2.162      1.442        875        640:
+                   all        107        938      0.261      0.224      0.148     0.0775
+     10/500      9.77G      1.835      2.159      1.439        267        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     11/500      9.38G      1.823      2.102      1.428        681        640:
+                   all        107        938      0.156      0.132     0.0764     0.0305
+     11/500      9.39G      1.825      2.131      1.439        180        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     12/500      8.91G      1.806      2.074      1.397        792        640:
+                   all        107        938      0.151      0.202     0.0907     0.0361
+     12/500      8.92G      1.802      2.077      1.402        298        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     13/500      9.01G      1.797       2.08      1.407        782        640:
+                   all        107        938      0.182      0.147     0.0794     0.0349
+     13/500      9.01G      1.802       2.08      1.404        200        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     14/500      8.85G      1.794      2.083      1.401        686        640:
+                   all        107        938      0.199      0.199      0.126     0.0538
+     14/500      8.86G      1.786      2.074      1.403        163        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     15/500      8.79G       1.78       2.04        1.4        839        640:
+                   all        107        938       0.12     0.0839     0.0314     0.0144
+     15/500       8.8G      1.776      2.041      1.404        183        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     16/500      8.85G      1.741      1.996      1.382        798        640:
+                   all        107        938      0.297      0.263      0.199     0.0946
+     16/500      8.86G      1.746          2      1.389        234        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     17/500      9.37G      1.748      1.989       1.37        704        640:
+                   all        107        938      0.244      0.252      0.165     0.0786
+     17/500      10.1G      1.765      2.003      1.373        191        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     18/500      9.17G      1.781      2.046       1.41        742        640:
+     18/500      9.18G      1.774      2.026      1.402        300        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+     19/500      7.86G        1.7      1.976      1.372        782        640:
+
+     19/500      8.67G      1.721      1.971      1.374        701        640:
+     19/500      8.68G      1.719      1.969      1.365        203        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     20/500      8.75G      1.752      1.967      1.369        949        640:
+     20/500      8.76G      1.746      1.962       1.36        197        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]
+
+     21/500      8.97G      1.718      1.982       1.37        722        640:
+                   all        107        938      0.351      0.307      0.265       0.14
+     21/500      8.98G      1.719       1.97      1.371        213        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+     22/500      8.59G      1.708      1.949      1.381        759        640:
+                   all        107        938      0.388      0.302      0.257       0.13
+     22/500       8.6G      1.716      1.948      1.379        289        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+     23/500      9.16G      1.693      1.932      1.354        735        640:
+     23/500      9.16G      1.691      1.901      1.357        233        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     24/500      8.62G      1.666      1.858      1.346        706        640:
+     24/500      9.57G      1.683       1.89      1.354        298        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     25/500         9G      1.686      1.904      1.357        801        640:
+     25/500      9.01G      1.689        1.9      1.361        255        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     26/500      8.68G      1.644      1.843       1.35        691        640:
+     26/500      8.69G      1.666      1.859      1.342        241        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     27/500      8.96G      1.699       1.88      1.323        866        640:
+     27/500      8.97G      1.699      1.869      1.329        267        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     28/500      8.37G       1.67      1.844      1.344        237        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938       0.43      0.291      0.237      0.127
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+     29/500      8.84G      1.662      1.845      1.338        772        640:
+                   all        107        938      0.381      0.332      0.282      0.146
+     29/500      8.84G       1.67      1.849      1.345        208        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     30/500      8.78G      1.655      1.842      1.337        865        640:
+                   all        107        938       0.36      0.295      0.239      0.124
+     30/500      8.79G      1.656       1.85      1.338        189        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     31/500      8.54G      1.661      1.849      1.333        814        640:
+                   all        107        938      0.378       0.31      0.275      0.142
+     31/500      8.55G      1.646      1.837      1.327        229        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     32/500         9G      1.621      1.778      1.324        733        640:
+                   all        107        938      0.345       0.29      0.255      0.133
+     32/500      9.01G      1.629      1.798      1.326        178        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     33/500      9.58G       1.65      1.807      1.315        927        640:
+                   all        107        938      0.361      0.324      0.273      0.141
+     33/500      9.59G      1.654      1.803      1.317        273        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     34/500       8.6G      1.676      1.849      1.341        725        640:
+                   all        107        938      0.344      0.314      0.269      0.134
+     34/500      8.61G      1.661       1.83      1.335        210        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     35/500       8.7G      1.628      1.804      1.324        635        640:
+                   all        107        938      0.346      0.326      0.287      0.152
+     35/500      8.31G       1.65      1.809      1.324        185        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     36/500      9.73G      1.638       1.77       1.32        752        640:
+                   all        107        938      0.287      0.354      0.243      0.131
+     36/500      9.75G      1.639      1.762      1.313        280        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     37/500      9.02G      1.625      1.781      1.317        814        640:
+     37/500      9.03G      1.611      1.764      1.314        240        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+     38/500      7.87G      1.659      1.811      1.342        750        640:
+
+     38/500      8.67G      1.635      1.799      1.322        761        640:
+     38/500      8.68G      1.633      1.792      1.319        222        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+     39/500      7.87G       1.62       1.67      1.249        803        640:
+
+     39/500      9.23G      1.605      1.741      1.299        667        640:
+     39/500      9.23G      1.627       1.75      1.301        318        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+     40/500      7.91G      1.672      1.882      1.286        731        640:
+
+     40/500      8.85G      1.657      1.834      1.327        788        640:
+     40/500      8.86G      1.634      1.801      1.314        242        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+     41/500      8.12G      1.583       1.74      1.318        811        640:
+
+     41/500      9.02G      1.612      1.749      1.296        826        640:
+     41/500      9.03G      1.614      1.732      1.297        330        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+     42/500      8.05G      1.609      1.788       1.28        794        640:
+     42/500      8.51G      1.592      1.752      1.284        819        640:
+     42/500      8.51G      1.592      1.752      1.284        819        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+     43/500      8.68G      1.616      1.715      1.302        848        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+                   all        107        938      0.448      0.374      0.363      0.198
+     44/500      8.46G      1.582      1.722      1.295        783        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+                   all        107        938       0.45       0.33      0.323      0.177
+     45/500      8.76G      1.582      1.693      1.294        835        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.408      0.325      0.295      0.149
+     46/500      8.31G      1.586      1.694      1.281        799        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+                   all        107        938      0.432       0.33      0.318      0.162
+     47/500      9.16G      1.588      1.685      1.277        750        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.466      0.372      0.353      0.182
+     48/500      8.28G      1.583      1.681      1.279        889        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.437       0.36      0.339      0.181
+     49/500      8.75G      1.588      1.688      1.281        772        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.481      0.366      0.375      0.211
+     50/500       8.4G      1.575      1.698      1.285        868        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938       0.44      0.389      0.353      0.197
+     51/500      8.72G       1.56      1.661      1.266        688        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.379      0.325      0.269      0.135
+     52/500      8.89G      1.591      1.707       1.29        753        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.422      0.374      0.339      0.179
+     53/500       8.5G      1.609      1.695      1.283        853        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.414      0.343      0.328      0.181
+     54/500      8.75G      1.564      1.631      1.276        787        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.387      0.465      0.376       0.21
+     55/500      8.85G      1.548      1.638      1.273        799        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.385      0.377      0.321      0.173
+     56/500      8.64G      1.565      1.664      1.274        667        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.374      0.335       0.27      0.135
+     57/500       8.4G      1.543      1.616      1.248        849        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.346      0.334      0.268      0.141
+     58/500      8.84G      1.508      1.573       1.25        819        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.357       0.26      0.202      0.102
+     59/500      9.23G      1.547      1.632      1.267        826        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.447      0.364      0.347      0.179
+     60/500      8.77G      1.544      1.592      1.251        772        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.353      0.301      0.273      0.135
+     61/500      8.35G       1.52      1.558       1.24        764        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.388      0.319      0.292      0.152
+     62/500      9.23G      1.526      1.589      1.253        789        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.435      0.354      0.361        0.2
+     63/500       9.7G      1.515      1.523      1.223        820        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.472      0.366      0.356      0.197
+     64/500      9.46G      1.551      1.576      1.239        811        640:
+     64/500      9.46G      1.522       1.56      1.241        779        640:
+     64/500      9.46G      1.522       1.56      1.241        779        640:
+                   all        107        938      0.397      0.357      0.322      0.184
+     65/500      8.67G      1.554      1.612      1.261        777        640:
+     65/500       9.7G      1.547      1.581      1.246        821        640:
+     65/500       9.7G      1.547      1.581      1.246        821        640:
+                   all        107        938      0.377       0.31      0.276      0.156
+     66/500      8.32G      1.525      1.554      1.252        737        640:
+     66/500      8.32G      1.518      1.567      1.248        925        640:
+     66/500      8.32G      1.518      1.567      1.248        925        640:
+                   all        107        938       0.47       0.44       0.41      0.228
+     67/500      8.69G       1.54      1.588      1.254        910        640:
+     67/500      9.13G      1.543      1.588      1.257        760        640:
+     67/500      9.13G      1.543      1.588      1.257        760        640:
+                   all        107        938      0.469      0.367      0.363      0.202
+     68/500      8.66G      1.506      1.595      1.238        789        640:
+     68/500      9.24G      1.524      1.553      1.242        854        640:
+     68/500      9.24G      1.524      1.553      1.242        854        640:
+                   all        107        938       0.56      0.364      0.388      0.213
+     69/500      8.61G      1.512      1.461       1.22        769        640:
+     69/500      8.61G      1.509      1.512      1.231       1038        640:
+     69/500      8.61G      1.509      1.512      1.231       1038        640:
+                   all        107        938      0.453      0.391      0.353      0.188
+     70/500      7.91G      1.529      1.523      1.233        787        640:
+     70/500      8.75G      1.534      1.542      1.231        890        640:
+     70/500      8.75G      1.534      1.542      1.231        890        640:
+                   all        107        938       0.45      0.362      0.359      0.195
+     71/500      7.81G      1.529      1.486      1.231        843        640:
+     71/500      9.18G      1.486      1.508      1.212        817        640:
+     71/500      9.18G      1.486      1.508      1.212        817        640:
+                   all        107        938      0.436      0.381      0.366      0.202
+     72/500      8.01G      1.471      1.533      1.223        765        640:
+     72/500      8.77G      1.513      1.533      1.245        745        640:
+     72/500      8.77G      1.513      1.533      1.245        745        640:
+                   all        107        938      0.333      0.269      0.225      0.125
+     73/500      7.84G      1.539      1.576      1.234        692        640:
+     73/500       9.2G      1.526      1.565       1.24        769        640:
+     73/500       9.2G      1.526      1.565       1.24        769        640:
+                   all        107        938       0.46      0.337      0.333      0.185
+     74/500      7.96G      1.369      1.547      1.193        641        640:
+     74/500      8.38G      1.496      1.508      1.233        802        640:
+     74/500      8.38G      1.496      1.508      1.233        802        640:
+                   all        107        938      0.409      0.242      0.227       0.13
+     75/500      7.73G      1.497      1.433      1.195        835        640:
+     75/500      9.04G       1.48      1.473      1.209        869        640:
+     75/500      9.04G       1.48      1.473      1.209        869        640:
+                   all        107        938      0.492      0.407      0.399      0.221
+     76/500      7.81G      1.471      1.481      1.262        772        640:
+     76/500      9.25G      1.469      1.464      1.225        845        640:
+     76/500      9.25G      1.469      1.464      1.225        845        640:
+                   all        107        938      0.498       0.37      0.375      0.205
+     77/500      7.87G       1.44      1.412      1.187        794        640:
+     77/500      8.35G      1.509      1.495      1.233        820        640:
+     77/500      8.35G      1.509      1.495      1.233        820        640:
+                   all        107        938      0.458      0.361      0.356      0.194
+     78/500      7.96G      1.496       1.57      1.242        790        640:
+     78/500      8.38G      1.483      1.464      1.214        921        640:
+     78/500      8.38G      1.483      1.464      1.214        921        640:
+                   all        107        938      0.447      0.359      0.335      0.189
+     79/500      7.89G      1.477      1.547      1.202        778        640:
+     79/500      8.42G       1.49      1.519      1.224        770        640:
+     79/500      8.42G       1.49      1.519      1.224        770        640:
+                   all        107        938      0.463      0.393      0.369      0.204
+     80/500      7.87G      1.441      1.404      1.198        802        640:
+     80/500      9.12G      1.499       1.48      1.219        727        640:
+     80/500      9.12G      1.499       1.48      1.219        727        640:
+                   all        107        938      0.417      0.279      0.267      0.147
+     81/500      7.94G      1.407      1.508       1.19        727        640:
+     81/500      8.33G       1.46      1.489      1.211        779        640:
+     81/500      8.33G       1.46      1.489      1.211        779        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+     82/500      8.93G      1.506      1.523      1.219        760        640:
+     82/500      8.93G      1.506      1.523      1.219        760        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+     83/500      8.38G      1.502      1.463      1.223        844        640:
+     83/500      8.38G      1.502      1.463      1.223        844        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+     84/500      8.41G      1.467      1.486      1.232        681        640:
+     84/500      8.41G      1.467      1.486      1.232        681        640:
+     85/500      7.87G      1.496      1.466      1.228        750        640:
+     85/500      7.87G      1.496      1.466      1.228        750        640:
+     85/500       9.2G      1.502      1.451      1.227        911        640:
+     85/500       9.2G      1.502      1.451      1.227        911        640:
+     86/500      7.89G      1.489      1.463       1.22        814        640:
+     86/500      7.89G      1.489      1.463       1.22        814        640:
+     86/500       8.6G      1.461      1.434      1.211        742        640:
+     86/500       8.6G      1.461      1.434      1.211        742        640:
+     87/500      7.89G      1.488      1.535      1.217        705        640:
+     87/500      7.89G      1.488      1.535      1.217        705        640:
+     87/500      8.66G      1.468      1.446      1.206        771        640:
+     87/500      8.66G      1.468      1.446      1.206        771        640:
+     88/500      7.92G      1.481      1.395      1.183        907        640:
+     88/500      7.92G      1.481      1.395      1.183        907        640:
+     88/500      8.25G      1.433      1.397      1.185        887        640:
+     88/500      8.25G      1.433      1.397      1.185        887        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+     89/500      8.73G      1.474      1.443      1.203        826        640:
+     89/500      8.73G      1.474      1.443      1.203        826        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+     90/500      8.54G      1.443      1.429      1.201        744        640:
+     90/500      8.54G      1.443      1.429      1.201        744        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+     91/500      8.56G      1.429      1.388      1.179        644        640:
+     91/500      8.56G      1.429      1.388      1.179        644        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+     92/500      8.29G      1.453       1.39      1.192        741        640:
+     92/500      8.29G      1.453       1.39      1.192        741        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+     93/500      8.58G       1.44      1.403      1.197        817        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+                   all        107        938      0.419      0.399      0.359      0.184
+     94/500      9.08G      1.479      1.446      1.215        797        640:
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s]tances      Box(P          R      mAP50  m
+                   all        107        938      0.491      0.388      0.386      0.212
+     95/500      8.52G      1.427      1.381      1.176        680        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.486      0.417      0.427      0.238
+     96/500      9.16G      1.447      1.384      1.184        893        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938       0.39      0.377      0.309      0.167
+     97/500      8.29G      1.443      1.371      1.181        890        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.408       0.38      0.298      0.157
+     98/500      8.78G      1.473      1.409      1.198        820        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.483      0.438       0.41       0.23
+     99/500      9.05G      1.424      1.364      1.192        739        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.491      0.369      0.379      0.218
+    100/500      8.37G       1.42      1.364      1.179        784        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.456      0.387      0.358      0.195
+    101/500      9.04G      1.496      1.449      1.214        876        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.517      0.414      0.419       0.22
+    102/500       8.6G      1.425      1.364      1.182        765        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.469        0.4      0.381      0.211
+    103/500      8.83G       1.42      1.366      1.185        796        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.464      0.405      0.366        0.2
+    104/500      8.51G      1.423      1.362      1.203        694        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.484      0.387      0.377      0.201
+    105/500      8.32G      1.397      1.296      1.177        794        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.476       0.41      0.384      0.215
+    106/500      9.08G      1.389      1.315      1.173        822        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.427      0.428      0.372      0.207
+    107/500      8.33G      1.388      1.287      1.179        754        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.473      0.418      0.393      0.213
+    108/500      8.32G      1.429      1.338      1.166        867        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.516      0.414      0.399      0.215
+    109/500       8.9G      1.426      1.335      1.177        750        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.394      0.384      0.302      0.158
+    110/500      8.52G       1.45      1.362       1.19        809        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.444      0.346      0.315      0.168
+    111/500      8.56G      1.408      1.339      1.172        803        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.508      0.395      0.383      0.211
+    112/500       9.2G      1.439      1.346      1.178        724        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.379      0.184      0.152     0.0748
+    113/500       8.5G      1.441       1.35      1.186        764        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.387       0.37       0.29      0.154
+    114/500      8.84G       1.38      1.313       1.16        776        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.452      0.395      0.364      0.205
+    115/500      9.12G      1.374      1.313      1.173        737        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.494      0.356      0.346      0.192
+    116/500      8.49G      1.399      1.323      1.171        730        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.526      0.416      0.393      0.214
+    117/500      8.33G      1.397      1.316      1.168        774        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.451      0.384      0.351      0.198
+    118/500      9.23G      1.398      1.312      1.169        709        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.489      0.373      0.362      0.199
+    119/500      8.42G      1.392       1.29      1.155        733        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.447      0.446      0.406      0.225
+    120/500      8.64G      1.382       1.24      1.147        855        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.483       0.42      0.406      0.224
+    121/500      8.28G      1.391       1.28      1.155        904        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.502      0.436      0.408      0.219
+    122/500      8.67G      1.396      1.285      1.169        699        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.425      0.338      0.308      0.162
+    123/500         9G      1.397      1.307      1.163        761        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.555      0.401      0.411      0.234
+    124/500      8.35G       1.39      1.279      1.168        856        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.486      0.406      0.395      0.208
+    125/500      8.81G      1.382      1.252      1.152        820        640:
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.398      0.449      0.357      0.192
+Stopping training early as no improvement observed in last 30 epochs. Best results observed at epoch 95, best model saved as best.pt.
+To update EarlyStopping(patience=30) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+125 epochs completed in 0.142 hours.
+Optimizer stripped from runs/detect/train5/weights/last.pt, 6.3MB
+Optimizer stripped from runs/detect/train5/weights/best.pt, 6.3MB
+Validating runs/detect/train5/weights/best.pt...
+Ultralytics YOLOv8.0.239 🚀 Python-3.8.17 torch-1.9.0+cu111 CUDA:0 (GeForce RTX 3080 Ti, 12054MiB)
+Model summary (fused): 168 layers, 3006038 parameters, 0 gradients, 8.1 GFLOPs
+Ultralytics YOLOv8.0.239 🚀 Python-3.8.17 torch-1.9.0+cu111 CUDA:0 (GeForce RTX 3080 Ti, 12054MiB)
+WARNING ⚠️ Upgrade to torch>=2.0.0 for deterministic training.
+[34m[1mengine/trainer: [39m[22mtask=detect, mode=train, model=yolov8n.pt, data=/home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/custom_data-8.yaml, epochs=500, time=None, patience=30, batch=64, imgsz=640, save=True, save_period=-1, cache=False, device=None, workers=8, project=None, name=train5, exist_ok=False, pretrained=True, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=runs/detect/train5
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 22        [15, 18, 21]  1    751702  ultralytics.nn.modules.head.Detect           [2, [64, 128, 256]]
+Model summary: 225 layers, 3011238 parameters, 3011222 gradients, 8.2 GFLOPs
+Transferred 355/355 items from pretrained weights
+[34m[1mTensorBoard: [39m[22mStart with 'tensorboard --logdir runs/detect/train5', view at http://localhost:6006/
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270037.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [       1.17      1.1662]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270043.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [     1.2178      1.2291]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270066.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [       1.08      1.1091      1.0031]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270068.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [     1.0744]
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[34m[1mval: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/val/images/A2303210004.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [     1.0425      1.0575]
+Plotting labels to runs/detect/train5/labels.jpg...
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[34m[1mval: [39m[22mScanning /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/val/labels.cache...
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.001667, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+500 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+      1/500      9.45G      1.392      1.289      1.144        798        640:
+                   all        107        938      0.481      0.422        0.4      0.225
+      1/500      9.45G       1.37      1.259      1.138        243        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+  0%|          | 0/15 [00:00<?, ?it/s]wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+      2/500      8.59G      1.335      1.263       1.13        809        640:  wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+      2/500      9.08G      1.338      1.202      1.129        829        640:
+                   all        107        938      0.485      0.466      0.431      0.241
+      2/500      9.08G      1.337      1.214      1.135        692        640:  [34m[1mwandb[39m[22m: [33mWARNING[39m Step only supports monotonically increasing values, use define_metric to set a custom x axis. For details see: https://wandb.me/define-metric
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 125. Dropping entry: {'train/box_loss': 1.36994, 'train/cls_loss': 1.25855, 'train/dfl_loss': 1.13788, '_timestamp': 1704863944.0449114}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00023338000000000002, 'lr/pg1': 0.00023338000000000002, 'lr/pg2': 0.00023338000000000002, '_timestamp': 1704863944.0450137}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.48133, 'metrics/recall(B)': 0.42167, 'metrics/mAP50(B)': 0.40045, 'metrics/mAP50-95(B)': 0.22485, 'val/box_loss': 1.69475, 'val/cls_loss': 1.88359, 'val/dfl_loss': 1.43518, '_timestamp': 1704863944.5538995}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 125. Dropping entry: {'labels': {'_type': 'image-file', 'sha256': 'a4522e9f539b7ba275b65067639daa3c0b079c7f24176b59393d33ec4c24575f', 'size': 175197, 'path': 'media/images/labels_125_a4522e9f539b7ba275b6.jpg', 'format': 'jpg', 'width': 1600, 'height': 1600}, '_timestamp': 1704863944.5692906}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 125. Dropping entry: {'train_batch0': {'_type': 'image-file', 'sha256': '2651c8bb22722625c68c56b2260f679dfdd2942fa709659b4fd1629def381d0f', 'size': 359596, 'path': 'media/images/train_batch0_125_2651c8bb22722625c68c.jpg', 'format': 'jpg', 'width': 1920, 'height': 1920}, '_timestamp': 1704863944.5910296}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 125. Dropping entry: {'train_batch1': {'_type': 'image-file', 'sha256': '5bc564f8fb0aa0b668dfb5ef425a25b5993aa6eb42033b69b4f21b2ee69a81b9', 'size': 471005, 'path': 'media/images/train_batch1_125_5bc564f8fb0aa0b668df.jpg', 'format': 'jpg', 'width': 1920, 'height': 1920}, '_timestamp': 1704863944.6161227}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 125. Dropping entry: {'train_batch2': {'_type': 'image-file', 'sha256': '50303c95cb4499954e9ec936a8b37126deb730c46dd1a82a1a46cba7f0504110', 'size': 352163, 'path': 'media/images/train_batch2_125_50303c95cb4499954e9e.jpg', 'format': 'jpg', 'width': 1920, 'height': 1920}, '_timestamp': 1704863944.6392076}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 125. Dropping entry: {'model/parameters': 3011238, 'model/GFLOPs': 8.195, 'model/speed_PyTorch(ms)': 0.791, '_timestamp': 1704863944.7135696}).
+      2/500      9.66G      1.338      1.201      1.136        213        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+      3/500      8.85G      1.289      1.151      1.118        837        640:
+      3/500      9.31G      1.321      1.173      1.128        245        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      4/500      9.14G      1.343      1.178       1.14        681        640:
+      4/500      9.15G      1.342      1.178       1.14        263        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      5/500      9.02G      1.334      1.205      1.125        798        640:
+      5/500      9.03G      1.333      1.192      1.128        262        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/15 [00:00<?, ?it/s]wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      6/500      8.13G      1.334      1.142      1.109        835        640:  wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+      6/500      8.97G      1.359      1.192      1.142        744        640:  [34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 2 is less than current step: 125. Dropping entry: {'train/box_loss': 1.33781, 'train/cls_loss': 1.20073, 'train/dfl_loss': 1.13596, '_timestamp': 1704863948.2795482}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 2 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0004824728086, 'lr/pg1': 0.0004824728086, 'lr/pg2': 0.0004824728086, '_timestamp': 1704863948.2796516}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 2 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.48459, 'metrics/recall(B)': 0.46565, 'metrics/mAP50(B)': 0.43149, 'metrics/mAP50-95(B)': 0.24076, 'val/box_loss': 1.72174, 'val/cls_loss': 1.7417, 'val/dfl_loss': 1.44866, '_timestamp': 1704863948.812191}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 3 is less than current step: 125. Dropping entry: {'train/box_loss': 1.32073, 'train/cls_loss': 1.17295, 'train/dfl_loss': 1.12758, '_timestamp': 1704863952.4089544}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 3 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0007305754192, 'lr/pg1': 0.0007305754192, 'lr/pg2': 0.0007305754192, '_timestamp': 1704863952.4090457}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 3 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.47396, 'metrics/recall(B)': 0.39842, 'metrics/mAP50(B)': 0.38542, 'metrics/mAP50-95(B)': 0.21681, 'val/box_loss': 1.74489, 'val/cls_loss': 1.81039, 'val/dfl_loss': 1.45528, '_timestamp': 1704863953.113518}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 4 is less than current step: 125. Dropping entry: {'train/box_loss': 1.34184, 'train/cls_loss': 1.17761, 'train/dfl_loss': 1.1404, '_timestamp': 1704863956.6771297}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 4 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0009776878318, 'lr/pg1': 0.0009776878318, 'lr/pg2': 0.0009776878318, '_timestamp': 1704863956.677223}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 4 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.5071, 'metrics/recall(B)': 0.32681, 'metrics/mAP50(B)': 0.32572, 'metrics/mAP50-95(B)': 0.18162, 'val/box_loss': 1.74784, 'val/cls_loss': 2.10794, 'val/dfl_loss': 1.45752, '_timestamp': 1704863957.105023}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 5 is less than current step: 125. Dropping entry: {'train/box_loss': 1.33296, 'train/cls_loss': 1.19159, 'train/dfl_loss': 1.12823, '_timestamp': 1704863960.679217}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 5 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0012238100464000003, 'lr/pg1': 0.0012238100464000003, 'lr/pg2': 0.0012238100464000003, '_timestamp': 1704863960.6793075}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 5 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.47028, 'metrics/recall(B)': 0.41551, 'metrics/mAP50(B)': 0.39171, 'metrics/mAP50-95(B)': 0.22459, 'val/box_loss': 1.71086, 'val/cls_loss': 1.7864, 'val/dfl_loss': 1.43818, '_timestamp': 1704863961.1296806}).
+      6/500      9.53G      1.358      1.213      1.138        662        640:
+      6/500      9.53G      1.366      1.225      1.143        236        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      7/500      8.48G      1.362      1.225      1.136        758        640:
+      7/500      8.49G      1.376      1.232      1.143        278        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      8/500      8.82G      1.384      1.276      1.169        808        640:
+      8/500      8.83G      1.412      1.295      1.183        177        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      9/500      9.84G      1.433      1.326      1.174        245        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.431      0.354      0.331      0.173
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/15 [00:00<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 6 is less than current step: 125. Dropping entry: {'train/box_loss': 1.3659, 'train/cls_loss': 1.22489, 'train/dfl_loss': 1.14295, '_timestamp': 1704863964.7079873}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 6 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0014689420630000002, 'lr/pg1': 0.0014689420630000002, 'lr/pg2': 0.0014689420630000002, '_timestamp': 1704863964.708089}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 6 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.41922, 'metrics/recall(B)': 0.42819, 'metrics/mAP50(B)': 0.35946, 'metrics/mAP50-95(B)': 0.19207, 'val/box_loss': 1.80413, 'val/cls_loss': 1.94419, 'val/dfl_loss': 1.49777, '_timestamp': 1704863965.1443121}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 7 is less than current step: 125. Dropping entry: {'train/box_loss': 1.37595, 'train/cls_loss': 1.23238, 'train/dfl_loss': 1.14305, '_timestamp': 1704863968.7401993}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 7 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0016471960400000001, 'lr/pg1': 0.0016471960400000001, 'lr/pg2': 0.0016471960400000001, '_timestamp': 1704863968.7403355}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 7 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.43136, 'metrics/recall(B)': 0.36248, 'metrics/mAP50(B)': 0.32364, 'metrics/mAP50-95(B)': 0.17845, 'val/box_loss': 1.80408, 'val/cls_loss': 1.97907, 'val/dfl_loss': 1.53247, '_timestamp': 1704863969.1765566}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 8 is less than current step: 125. Dropping entry: {'train/box_loss': 1.41191, 'train/cls_loss': 1.29505, 'train/dfl_loss': 1.18312, '_timestamp': 1704863972.7704334}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 8 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0016471960400000001, 'lr/pg1': 0.0016471960400000001, 'lr/pg2': 0.0016471960400000001, '_timestamp': 1704863972.7705486}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 8 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.44368, 'metrics/recall(B)': 0.39962, 'metrics/mAP50(B)': 0.33926, 'metrics/mAP50-95(B)': 0.1759, 'val/box_loss': 1.83857, 'val/cls_loss': 1.9594, 'val/dfl_loss': 1.54272, '_timestamp': 1704863973.2017744}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 9 is less than current step: 125. Dropping entry: {'train/box_loss': 1.43263, 'train/cls_loss': 1.32605, 'train/dfl_loss': 1.1744, '_timestamp': 1704863976.7992835}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 9 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00164389538, 'lr/pg1': 0.00164389538, 'lr/pg2': 0.00164389538, '_timestamp': 1704863976.7993925}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 9 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.43091, 'metrics/recall(B)': 0.35407, 'metrics/mAP50(B)': 0.33086, 'metrics/mAP50-95(B)': 0.17348, 'val/box_loss': 1.91524, 'val/cls_loss': 2.01665, 'val/dfl_loss': 1.58398, '_timestamp': 1704863977.2402186}).
+     10/500      9.93G      1.412      1.299      1.177        267        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.452      0.371      0.344       0.19
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     11/500      9.55G      1.396      1.275      1.172        180        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.444      0.367      0.347      0.178
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     12/500      9.08G      1.428      1.302      1.168        298        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.405      0.403      0.338      0.178
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     13/500      8.68G      1.417      1.322      1.169        852        640:  wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     13/500      8.68G      1.418      1.327      1.172        852        640:  [34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 10 is less than current step: 125. Dropping entry: {'train/box_loss': 1.41236, 'train/cls_loss': 1.2991, 'train/dfl_loss': 1.17717, '_timestamp': 1704863980.9322762}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 10 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0016405947200000002, 'lr/pg1': 0.0016405947200000002, 'lr/pg2': 0.0016405947200000002, '_timestamp': 1704863980.9323797}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 10 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.45171, 'metrics/recall(B)': 0.37077, 'metrics/mAP50(B)': 0.34414, 'metrics/mAP50-95(B)': 0.18958, 'val/box_loss': 1.8388, 'val/cls_loss': 1.99874, 'val/dfl_loss': 1.53033, '_timestamp': 1704863981.3672588}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 11 is less than current step: 125. Dropping entry: {'train/box_loss': 1.39586, 'train/cls_loss': 1.27458, 'train/dfl_loss': 1.17207, '_timestamp': 1704863984.9654894}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 11 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00163729406, 'lr/pg1': 0.00163729406, 'lr/pg2': 0.00163729406, '_timestamp': 1704863984.965618}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 11 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.44406, 'metrics/recall(B)': 0.36665, 'metrics/mAP50(B)': 0.34718, 'metrics/mAP50-95(B)': 0.17786, 'val/box_loss': 1.95176, 'val/cls_loss': 2.0237, 'val/dfl_loss': 1.5753, '_timestamp': 1704863985.4059606}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 12 is less than current step: 125. Dropping entry: {'train/box_loss': 1.42765, 'train/cls_loss': 1.30155, 'train/dfl_loss': 1.16827, '_timestamp': 1704863989.0102253}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 12 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0016339934, 'lr/pg1': 0.0016339934, 'lr/pg2': 0.0016339934, '_timestamp': 1704863989.0103557}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 12 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.40469, 'metrics/recall(B)': 0.40313, 'metrics/mAP50(B)': 0.33816, 'metrics/mAP50-95(B)': 0.17787, 'val/box_loss': 1.87637, 'val/cls_loss': 2.03374, 'val/dfl_loss': 1.54994, '_timestamp': 1704863989.464392}).
+     13/500      9.17G      1.413      1.316      1.169        200        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.486      0.348      0.345      0.178
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     14/500      9.02G      1.389      1.273      1.162        163        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.485      0.341      0.354      0.197
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     15/500      8.96G      1.386      1.257      1.161        183        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.478      0.406      0.387      0.211
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     16/500      9.02G      1.383      1.265      1.162        234        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938       0.42      0.348      0.301      0.163
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     17/500         9G      1.409       1.29      1.155        689        640:  [34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 13 is less than current step: 125. Dropping entry: {'train/box_loss': 1.41306, 'train/cls_loss': 1.31623, 'train/dfl_loss': 1.16888, '_timestamp': 1704863993.0696702}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 13 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00163069274, 'lr/pg1': 0.00163069274, 'lr/pg2': 0.00163069274, '_timestamp': 1704863993.0697565}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 13 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.48593, 'metrics/recall(B)': 0.34814, 'metrics/mAP50(B)': 0.34537, 'metrics/mAP50-95(B)': 0.1784, 'val/box_loss': 1.89548, 'val/cls_loss': 2.00697, 'val/dfl_loss': 1.55283, '_timestamp': 1704863993.5105586}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 14 is less than current step: 125. Dropping entry: {'train/box_loss': 1.38922, 'train/cls_loss': 1.27271, 'train/dfl_loss': 1.16197, '_timestamp': 1704863997.107444}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 14 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00162739208, 'lr/pg1': 0.00162739208, 'lr/pg2': 0.00162739208, '_timestamp': 1704863997.1075714}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 14 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.48505, 'metrics/recall(B)': 0.34077, 'metrics/mAP50(B)': 0.35443, 'metrics/mAP50-95(B)': 0.19729, 'val/box_loss': 1.85435, 'val/cls_loss': 2.09477, 'val/dfl_loss': 1.52556, '_timestamp': 1704863997.540446}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 15 is less than current step: 125. Dropping entry: {'train/box_loss': 1.38567, 'train/cls_loss': 1.25722, 'train/dfl_loss': 1.16119, '_timestamp': 1704864001.1610727}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 15 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00162409142, 'lr/pg1': 0.00162409142, 'lr/pg2': 0.00162409142, '_timestamp': 1704864001.161172}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 15 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.47828, 'metrics/recall(B)': 0.40623, 'metrics/mAP50(B)': 0.38726, 'metrics/mAP50-95(B)': 0.21102, 'val/box_loss': 1.78753, 'val/cls_loss': 1.84879, 'val/dfl_loss': 1.49662, '_timestamp': 1704864001.5942106}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 16 is less than current step: 125. Dropping entry: {'train/box_loss': 1.38269, 'train/cls_loss': 1.26458, 'train/dfl_loss': 1.16205, '_timestamp': 1704864005.1875277}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 16 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00162079076, 'lr/pg1': 0.00162079076, 'lr/pg2': 0.00162079076, '_timestamp': 1704864005.187629}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 16 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.42038, 'metrics/recall(B)': 0.34793, 'metrics/mAP50(B)': 0.30147, 'metrics/mAP50-95(B)': 0.16274, 'val/box_loss': 1.87863, 'val/cls_loss': 2.08921, 'val/dfl_loss': 1.53712, '_timestamp': 1704864005.6235871}).
+     17/500      10.2G      1.414      1.294      1.157        191        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.417      0.379      0.329      0.176
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     18/500      9.34G      1.425      1.293      1.167        300        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.434      0.381      0.344      0.182
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     19/500      8.83G      1.397      1.272      1.162        203        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.473      0.308      0.293      0.153
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+     20/500       8.9G      1.405      1.264      1.161        745        640:
+                   all        107        938      0.418      0.388      0.316      0.164
+     20/500      8.91G      1.408      1.276      1.158        197        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  mwandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+                 Class     Images  Instances      Box(P          R      mAP50  m
+  0%|          | 0/15 [00:00<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 17 is less than current step: 125. Dropping entry: {'train/box_loss': 1.41425, 'train/cls_loss': 1.29386, 'train/dfl_loss': 1.15676, '_timestamp': 1704864009.261345}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 17 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0016174900999999999, 'lr/pg1': 0.0016174900999999999, 'lr/pg2': 0.0016174900999999999, '_timestamp': 1704864009.2614636}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 17 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.41681, 'metrics/recall(B)': 0.37912, 'metrics/mAP50(B)': 0.32897, 'metrics/mAP50-95(B)': 0.17576, 'val/box_loss': 1.85268, 'val/cls_loss': 2.04332, 'val/dfl_loss': 1.52775, '_timestamp': 1704864009.7454774}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 18 is less than current step: 125. Dropping entry: {'train/box_loss': 1.42477, 'train/cls_loss': 1.29304, 'train/dfl_loss': 1.1671, '_timestamp': 1704864013.3547077}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 18 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00161418944, 'lr/pg1': 0.00161418944, 'lr/pg2': 0.00161418944, '_timestamp': 1704864013.3548038}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 18 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.43447, 'metrics/recall(B)': 0.38128, 'metrics/mAP50(B)': 0.34421, 'metrics/mAP50-95(B)': 0.18191, 'val/box_loss': 1.80884, 'val/cls_loss': 1.92001, 'val/dfl_loss': 1.50782, '_timestamp': 1704864013.7951589}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 19 is less than current step: 125. Dropping entry: {'train/box_loss': 1.39744, 'train/cls_loss': 1.27236, 'train/dfl_loss': 1.16174, '_timestamp': 1704864017.3904796}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 19 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0016108887800000001, 'lr/pg1': 0.0016108887800000001, 'lr/pg2': 0.0016108887800000001, '_timestamp': 1704864017.3906515}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 19 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.47346, 'metrics/recall(B)': 0.3078, 'metrics/mAP50(B)': 0.29312, 'metrics/mAP50-95(B)': 0.15311, 'val/box_loss': 1.82789, 'val/cls_loss': 2.35538, 'val/dfl_loss': 1.55938, '_timestamp': 1704864018.0037994}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 20 is less than current step: 125. Dropping entry: {'train/box_loss': 1.4081, 'train/cls_loss': 1.2758, 'train/dfl_loss': 1.15842, '_timestamp': 1704864021.588965}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 20 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00160758812, 'lr/pg1': 0.00160758812, 'lr/pg2': 0.00160758812, '_timestamp': 1704864021.5890584}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 20 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.41846, 'metrics/recall(B)': 0.38756, 'metrics/mAP50(B)': 0.31646, 'metrics/mAP50-95(B)': 0.16375, 'val/box_loss': 1.82808, 'val/cls_loss': 1.97892, 'val/dfl_loss': 1.53824, '_timestamp': 1704864022.0305262}).
+
+     21/500      9.13G      1.415      1.321      1.175        902        640:
+                   all        107        938      0.407      0.407      0.345      0.195
+     21/500      9.14G      1.408      1.317      1.173        213        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     22/500      8.75G      1.392      1.283      1.174        839        640:
+                   all        107        938      0.356       0.42      0.344      0.189
+     22/500      8.75G      1.395      1.293      1.173        289        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     23/500      9.31G      1.367      1.241      1.153        833        640:
+                   all        107        938      0.394      0.393      0.336       0.18
+     23/500      9.32G       1.36      1.232      1.152        233        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     24/500      9.72G      1.354      1.226      1.153        735        640:
+                   all        107        938      0.382      0.319      0.268      0.135
+     24/500      9.72G      1.354      1.226      1.153        735        640:  [34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 21 is less than current step: 125. Dropping entry: {'train/box_loss': 1.40847, 'train/cls_loss': 1.31679, 'train/dfl_loss': 1.17323, '_timestamp': 1704864025.6031444}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 21 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0016042874600000001, 'lr/pg1': 0.0016042874600000001, 'lr/pg2': 0.0016042874600000001, '_timestamp': 1704864025.6032298}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 21 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.40732, 'metrics/recall(B)': 0.40681, 'metrics/mAP50(B)': 0.34513, 'metrics/mAP50-95(B)': 0.19494, 'val/box_loss': 1.78164, 'val/cls_loss': 2.02273, 'val/dfl_loss': 1.52951, '_timestamp': 1704864026.0621536}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 22 is less than current step: 125. Dropping entry: {'train/box_loss': 1.39505, 'train/cls_loss': 1.29286, 'train/dfl_loss': 1.17309, '_timestamp': 1704864029.6821966}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 22 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0016009868, 'lr/pg1': 0.0016009868, 'lr/pg2': 0.0016009868, '_timestamp': 1704864029.682326}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 22 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.35553, 'metrics/recall(B)': 0.42022, 'metrics/mAP50(B)': 0.3444, 'metrics/mAP50-95(B)': 0.18932, 'val/box_loss': 1.80526, 'val/cls_loss': 1.99181, 'val/dfl_loss': 1.5313, '_timestamp': 1704864030.1221812}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 23 is less than current step: 125. Dropping entry: {'train/box_loss': 1.36027, 'train/cls_loss': 1.23155, 'train/dfl_loss': 1.15187, '_timestamp': 1704864033.7328126}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 23 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00159768614, 'lr/pg1': 0.00159768614, 'lr/pg2': 0.00159768614, '_timestamp': 1704864033.732936}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 23 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.39443, 'metrics/recall(B)': 0.3929, 'metrics/mAP50(B)': 0.33623, 'metrics/mAP50-95(B)': 0.18013, 'val/box_loss': 1.85605, 'val/cls_loss': 2.0811, 'val/dfl_loss': 1.5303, '_timestamp': 1704864034.1720352}).
+     24/500      9.73G      1.378      1.252      1.161        298        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     25/500      9.15G      1.398      1.272      1.168        847        640:
+                   all        107        938      0.361      0.386      0.329      0.184
+     25/500      9.16G      1.409      1.275      1.168        255        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     26/500      8.84G      1.374      1.248      1.159        829        640:
+                   all        107        938      0.431      0.382      0.335      0.181
+     26/500      8.84G      1.374      1.243      1.158        241        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     27/500      9.12G      1.402       1.23      1.149        822        640:
+                   all        107        938      0.484      0.394      0.377      0.213
+     27/500      9.13G      1.397      1.233       1.15        267        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+     28/500      8.51G       1.42       1.24      1.168        835        640:  wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+     28/500      8.52G       1.41      1.256      1.176        698        640:  [34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 24 is less than current step: 125. Dropping entry: {'train/box_loss': 1.37848, 'train/cls_loss': 1.25164, 'train/dfl_loss': 1.16059, '_timestamp': 1704864037.790946}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 24 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00159438548, 'lr/pg1': 0.00159438548, 'lr/pg2': 0.00159438548, '_timestamp': 1704864037.7910464}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 24 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.38233, 'metrics/recall(B)': 0.31877, 'metrics/mAP50(B)': 0.26775, 'metrics/mAP50-95(B)': 0.135, 'val/box_loss': 2.00544, 'val/cls_loss': 2.17105, 'val/dfl_loss': 1.64155, '_timestamp': 1704864038.2293906}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 25 is less than current step: 125. Dropping entry: {'train/box_loss': 1.40887, 'train/cls_loss': 1.27465, 'train/dfl_loss': 1.16848, '_timestamp': 1704864041.869675}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 25 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00159108482, 'lr/pg1': 0.00159108482, 'lr/pg2': 0.00159108482, '_timestamp': 1704864041.8697793}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 25 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.36115, 'metrics/recall(B)': 0.38587, 'metrics/mAP50(B)': 0.32889, 'metrics/mAP50-95(B)': 0.18393, 'val/box_loss': 1.8133, 'val/cls_loss': 1.98833, 'val/dfl_loss': 1.52803, '_timestamp': 1704864042.3066487}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 26 is less than current step: 125. Dropping entry: {'train/box_loss': 1.37438, 'train/cls_loss': 1.243, 'train/dfl_loss': 1.15777, '_timestamp': 1704864045.91787}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 26 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00158778416, 'lr/pg1': 0.00158778416, 'lr/pg2': 0.00158778416, '_timestamp': 1704864045.9179814}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 26 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.43134, 'metrics/recall(B)': 0.38202, 'metrics/mAP50(B)': 0.335, 'metrics/mAP50-95(B)': 0.18142, 'val/box_loss': 1.81368, 'val/cls_loss': 2.00569, 'val/dfl_loss': 1.53756, '_timestamp': 1704864046.357352}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 27 is less than current step: 125. Dropping entry: {'train/box_loss': 1.39664, 'train/cls_loss': 1.23259, 'train/dfl_loss': 1.15049, '_timestamp': 1704864049.9935596}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 27 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0015844835000000002, 'lr/pg1': 0.0015844835000000002, 'lr/pg2': 0.0015844835000000002, '_timestamp': 1704864049.993657}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 27 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.48391, 'metrics/recall(B)': 0.3941, 'metrics/mAP50(B)': 0.37678, 'metrics/mAP50-95(B)': 0.21299, 'val/box_loss': 1.75079, 'val/cls_loss': 1.87219, 'val/dfl_loss': 1.48243, '_timestamp': 1704864050.6169524}).
+     28/500      8.52G      1.415      1.258      1.172        769        640:
+                   all        107        938      0.491       0.38      0.369      0.205
+     28/500      8.52G      1.413      1.253      1.173        237        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     29/500      8.99G      1.388      1.266      1.163        787        640:
+                   all        107        938      0.462      0.365      0.326      0.169
+     29/500         9G      1.386      1.259      1.165        208        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     30/500      8.93G      1.381      1.238      1.157        729        640:
+                   all        107        938      0.493       0.41       0.38      0.212
+     30/500      8.94G      1.384      1.225      1.156        189        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+
+     31/500      8.69G       1.38      1.228      1.152        729        640:
+                   all        107        938      0.433      0.356      0.329      0.175
+     31/500       8.7G       1.38      1.232      1.154        229        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+     32/500      8.15G      1.355      1.196      1.152        878        640:  [34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 28 is less than current step: 125. Dropping entry: {'train/box_loss': 1.41278, 'train/cls_loss': 1.25344, 'train/dfl_loss': 1.17268, '_timestamp': 1704864054.2187953}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 28 is less than current step: 125. Dropping entry: {'lr/pg0': 0.0015811828399999999, 'lr/pg1': 0.0015811828399999999, 'lr/pg2': 0.0015811828399999999, '_timestamp': 1704864054.2188883}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 28 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.49092, 'metrics/recall(B)': 0.38048, 'metrics/mAP50(B)': 0.36946, 'metrics/mAP50-95(B)': 0.20547, 'val/box_loss': 1.83002, 'val/cls_loss': 1.90955, 'val/dfl_loss': 1.53677, '_timestamp': 1704864054.6590986}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 29 is less than current step: 125. Dropping entry: {'train/box_loss': 1.38626, 'train/cls_loss': 1.25891, 'train/dfl_loss': 1.16458, '_timestamp': 1704864058.2759528}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 29 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00157788218, 'lr/pg1': 0.00157788218, 'lr/pg2': 0.00157788218, '_timestamp': 1704864058.276152}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 29 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.4622, 'metrics/recall(B)': 0.36542, 'metrics/mAP50(B)': 0.32632, 'metrics/mAP50-95(B)': 0.16885, 'val/box_loss': 1.85571, 'val/cls_loss': 1.97153, 'val/dfl_loss': 1.54912, '_timestamp': 1704864058.712136}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 30 is less than current step: 125. Dropping entry: {'train/box_loss': 1.3838, 'train/cls_loss': 1.22491, 'train/dfl_loss': 1.15648, '_timestamp': 1704864062.3185236}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 30 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00157458152, 'lr/pg1': 0.00157458152, 'lr/pg2': 0.00157458152, '_timestamp': 1704864062.3186984}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 30 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.49298, 'metrics/recall(B)': 0.40952, 'metrics/mAP50(B)': 0.38012, 'metrics/mAP50-95(B)': 0.21211, 'val/box_loss': 1.78209, 'val/cls_loss': 1.88476, 'val/dfl_loss': 1.49254, '_timestamp': 1704864062.751181}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 31 is less than current step: 125. Dropping entry: {'train/box_loss': 1.37996, 'train/cls_loss': 1.2318, 'train/dfl_loss': 1.15409, '_timestamp': 1704864066.3846855}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 31 is less than current step: 125. Dropping entry: {'lr/pg0': 0.00157128086, 'lr/pg1': 0.00157128086, 'lr/pg2': 0.00157128086, '_timestamp': 1704864066.384864}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 31 is less than current step: 125. Dropping entry: {'metrics/precision(B)': 0.43267, 'metrics/recall(B)': 0.35579, 'metrics/mAP50(B)': 0.32946, 'metrics/mAP50-95(B)': 0.17507, 'val/box_loss': 1.90762, 'val/cls_loss': 2.00126, 'val/dfl_loss': 1.56331, '_timestamp': 1704864066.8149214}).
+
+     32/500      9.15G      1.375      1.235      1.159        719        640:
+                   all        107        938      0.462      0.392      0.371      0.204
+Stopping training early as no improvement observed in last 30 epochs. Best results observed at epoch 2, best model saved as best.pt.
+To update EarlyStopping(patience=30) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+32 epochs completed in 0.037 hours.
+Optimizer stripped from runs/detect/train5/weights/last.pt, 6.3MB
+Optimizer stripped from runs/detect/train5/weights/best.pt, 6.2MB
+Validating runs/detect/train5/weights/best.pt...
+     32/500      9.16G      1.371      1.244      1.159        178        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                 Class     Images  Instances      Box(P          R      mAP50  m
+Model summary (fused): 168 layers, 3006038 parameters, 0 gradients, 8.1 GFLOPs
+                   all        107        938      0.486      0.465      0.432      0.241
+                 aging        107        255      0.525      0.533      0.506      0.305
+                defect        107        683      0.448      0.397      0.358      0.176
+Speed: 0.1ms preprocess, 0.8ms inference, 0.0ms loss, 0.4ms postprocess per image
+Results saved to [1mruns/detect/train5
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: failed to find run yolov8/hi11xsj8 (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: failed to find run yolov8/hi11xsj8 (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run yolov8/hi11xsj8 not found during createRunFiles (<Response [404]>)

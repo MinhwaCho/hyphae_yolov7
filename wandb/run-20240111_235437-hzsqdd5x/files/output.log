@@ -1,0 +1,544 @@
+$$$$$$$$$$$$$$$$$$$$
+./data/train 640 64
+$$$$$$$$$$$$$$$$$$$$
+./data/valid 640 128
+[34m[1mautoanchor: [39m[22mAnalyzing anchors... anchors/target = 5.24, Best Possible Recall (BPR) = 0.9871
+                 from  n    params  module                                  arguments
+  0                -1  1       928  models.common.Conv                      [3, 32, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  2                -1  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  3                -2  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  4                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  5                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  6  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+  7                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  8                -1  1         0  models.common.MP                        []
+  9                -1  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 10                -2  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 11                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 12                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 13  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 15                -1  1         0  models.common.MP                        []
+ 16                -1  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 17                -2  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 19                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 20  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 21                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 22                -1  1         0  models.common.MP                        []
+ 23                -1  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 24                -2  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 25                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 26                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 27  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 28                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 29                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 30                -2  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 31                -1  1         0  models.common.SP                        [5]
+ 32                -2  1         0  models.common.SP                        [9]
+ 33                -3  1         0  models.common.SP                        [13]
+ 34  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 35                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 36          [-1, -7]  1         0  models.common.Concat                    [1]
+ 37                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 38                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 39                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 40                21  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 41          [-1, -2]  1         0  models.common.Concat                    [1]
+ 42                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 43                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 44                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 45                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 46  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 47                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 48                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 49                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 50                14  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 51          [-1, -2]  1         0  models.common.Concat                    [1]
+ 52                -1  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 53                -2  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 54                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 55                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 56  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 57                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 58                -1  1     73984  models.common.Conv                      [64, 128, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 59          [-1, 47]  1         0  models.common.Concat                    [1]
+ 60                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 61                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 62                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 63                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 64  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 65                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 66                -1  1    295424  models.common.Conv                      [128, 256, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 67          [-1, 37]  1         0  models.common.Concat                    [1]
+ 68                -1  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 69                -2  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 70                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 71                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 72  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 73                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 74                57  1     73984  models.common.Conv                      [64, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 75                65  1    295424  models.common.Conv                      [128, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 76                73  1   1180672  models.common.Conv                      [256, 512, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 77      [74, 75, 76]  1     19838  models.yolo.IDetect                     [2, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+/compuworks/anaconda3/envs/minhwa_py38/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+Model Summary: 263 layers, 6017694 parameters, 6017694 gradients, 13.2 GFLOPS
+Transferred 330/344 items from yolov7-tiny.pt
+Scaled weight_decay = 0.0005
+Optimizer groups: 58 .bias, 58 conv.weight, 61 other
+[34m[1mtrain: [39m[22mScanning 'data/train/labels' images and labels... 856 found, 0 missing
+[34m[1mtrain: [39m[22mNew cache created: data/train/labels.cache
+[34m[1mval: [39m[22mScanning 'data/valid/labels' images and labels... 111 found, 0 missing,
+[34m[1mval: [39m[22mNew cache created: data/valid/labels.cache
+Image sizes 640 train, 640 test
+Using 8 dataloader workers
+Logging results to runs/train/yolov7-custom96
+Starting training for 100 epochs...
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+      0/99     3.06G   0.09414   0.02007    0.0182    0.1324       195
+               Class      Images      Labels           P           R      mAP
+                 all         111         960     0.00693       0.229     0.00183    0.000288
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+      1/99     5.13G   0.09075   0.01579   0.01684    0.1234       725
+      1/99     5.13G    0.0894   0.01528   0.01645    0.1211       461
+      1/99     5.13G    0.0894   0.01528   0.01645    0.1211       461
+      1/99     5.13G   0.08808   0.01571   0.01622      0.12       201
+      2/99     5.13G   0.08402   0.01669   0.01502    0.1157       633
+      2/99     5.13G   0.08307   0.01745   0.01508    0.1156       683
+      2/99     5.13G   0.08229   0.01724   0.01492    0.1144       181
+      2/99     5.13G   0.08229   0.01724   0.01492    0.1144       181
+      3/99     5.13G   0.07874   0.01775   0.01414    0.1106       587
+      3/99     5.13G   0.07917   0.01776   0.01427    0.1112       725
+      3/99     5.13G   0.07854   0.01831   0.01421    0.1111       711
+      3/99     5.13G   0.07854   0.01831   0.01421    0.1111       711
+      4/99     5.13G   0.07602    0.0218    0.0131    0.1109       762
+      4/99     5.13G   0.07595   0.01917   0.01399    0.1091       604
+      4/99     5.13G   0.07555   0.01946   0.01373    0.1087       636
+      4/99     5.13G   0.07555   0.01946   0.01373    0.1087       636
+  0%|                                                 | 0/14 [00:00<?, ?it/s]
+      5/99     5.13G   0.07328   0.01982   0.01253    0.1056       705
+      5/99     5.13G   0.07255   0.02024   0.01269    0.1055       735
+      5/99     5.13G   0.07175   0.02006    0.0129    0.1047       189
+      5/99     5.13G   0.07175   0.02006    0.0129    0.1047       189
+      6/99     5.13G   0.07055   0.02171   0.01169    0.1039       615
+      6/99     5.13G   0.07008   0.02209   0.01169    0.1039       794
+      6/99     5.13G   0.06951   0.02208   0.01194    0.1035       745
+      6/99     5.13G   0.06951   0.02208   0.01194    0.1035       745
+      7/99     5.13G   0.06782   0.02448   0.01055    0.1029       811
+      7/99     5.13G   0.06714    0.0228   0.01139    0.1013       637
+      7/99     5.13G   0.06647   0.02247   0.01162    0.1006       704
+      7/99     5.13G   0.06647   0.02247   0.01162    0.1006       704
+  0%|                                                 | 0/14 [00:00<?, ?it/s]
+      8/99     5.13G   0.06485   0.02279   0.01075   0.09839       742
+      8/99     5.13G   0.06425   0.02253   0.01069   0.09747       597
+      8/99     5.13G   0.06443   0.02197   0.01095   0.09735       213
+      8/99     5.13G   0.06443   0.02197   0.01095   0.09735       213
+      9/99     5.13G   0.06321   0.02474   0.01025    0.0982       748
+      9/99     5.13G   0.06259   0.02349   0.01038   0.09646       627
+      9/99     5.13G   0.06233   0.02325   0.01048   0.09606       742
+      9/99     5.13G   0.06226   0.02336   0.01054   0.09616       292
+      9/99     5.13G   0.06226   0.02336   0.01054   0.09616       292
+     10/99     5.13G   0.06009   0.02535  0.009486   0.09493       800
+     10/99     5.13G   0.06079   0.02348  0.009652   0.09392       688
+     10/99     5.13G   0.06049   0.02323    0.0101   0.09382       683
+     10/99     5.13G   0.06049   0.02323    0.0101   0.09382       683
+     11/99     5.13G    0.0604   0.02577  0.008389   0.09456       825
+     11/99     5.13G   0.06003   0.02299  0.009192   0.09222       876
+     11/99     5.13G   0.05987   0.02282  0.009612    0.0923       613
+     11/99     5.13G   0.05987   0.02282  0.009612    0.0923       613
+     12/99     5.13G   0.05886   0.02274  0.007771   0.08937       712
+     12/99     5.13G   0.05831   0.02336  0.009202   0.09088       686
+     12/99     5.13G   0.05823   0.02284  0.008969   0.09004       693
+     12/99     5.13G   0.05823   0.02284  0.008969   0.09004       693
+  0%|                                                 | 0/14 [00:00<?, ?it/s]
+     13/99     5.13G   0.05792    0.0226  0.008464   0.08898       688
+     13/99     5.13G   0.05794    0.0229  0.008433   0.08928       657
+     13/99     5.13G    0.0572   0.02282  0.008692   0.08871       221
+     13/99     5.13G    0.0572   0.02282  0.008692   0.08871       221
+     14/99     5.13G   0.05547   0.02375  0.008137   0.08736       503
+     14/99     5.13G   0.05655   0.02348  0.008314   0.08835       891
+     14/99     5.13G   0.05638   0.02345  0.008618   0.08845       638
+     14/99     5.13G   0.05638   0.02345  0.008618   0.08845       638
+     15/99     5.13G   0.05598   0.02361  0.007591   0.08718       673
+     15/99     5.13G   0.05627   0.02299  0.007849   0.08711       701
+     15/99     5.13G   0.05563   0.02323  0.008098   0.08696       638
+     15/99     5.13G   0.05563   0.02323  0.008098   0.08696       638
+  0%|                                                 | 0/14 [00:00<?, ?it/s]
+     16/99     5.13G   0.05542   0.02306  0.007384   0.08586       614
+     16/99     5.13G   0.05544   0.02324  0.007298   0.08597       728
+     16/99     5.13G   0.05547    0.0232  0.007668   0.08633       207
+     16/99     5.13G   0.05547    0.0232  0.007668   0.08633       207
+     17/99     5.13G   0.05484   0.02387   0.00679    0.0855       603
+     17/99     5.13G   0.05495   0.02253  0.006767   0.08425       623
+     17/99     5.13G   0.05462   0.02276  0.007462   0.08485       843
+     17/99     5.13G   0.05462   0.02276  0.007462   0.08485       843
+     18/99     5.13G   0.05296   0.02325  0.007035   0.08324       686
+     18/99     5.13G   0.05284   0.02251  0.007124   0.08247       690
+     18/99     5.13G   0.05296     0.023  0.007301   0.08325       690
+     18/99     5.13G   0.05296     0.023  0.007301   0.08325       690
+  0%|                                                 | 0/14 [00:00<?, ?it/s]
+     19/99     5.13G   0.05272    0.0244  0.006501   0.08362       739
+     19/99     5.13G   0.05285   0.02352  0.006651   0.08302       594
+     19/99     5.13G   0.05319   0.02324  0.006934   0.08336       236
+     19/99     5.13G   0.05319   0.02324  0.006934   0.08336       236
+  0%|                                                 | 0/14 [00:00<?, ?it/s]
+     20/99     5.13G   0.05266   0.02396  0.007016   0.08364       689
+     20/99     5.13G   0.05288    0.0238  0.006767   0.08345       638
+     20/99     5.13G    0.0526   0.02343  0.007043   0.08308       228
+     20/99     5.13G    0.0526   0.02343  0.007043   0.08308       228
+     21/99     5.13G   0.04994   0.02349  0.006201   0.07963       694
+     21/99     5.13G   0.05057   0.02335  0.005769   0.07969       673
+     21/99     5.13G    0.0513   0.02317  0.006143   0.08061       641
+     21/99     5.13G    0.0513   0.02317  0.006143   0.08061       641
+     22/99     5.13G   0.04947   0.02472   0.00647   0.08066       782
+     22/99     5.13G   0.05091   0.02366  0.006108   0.08068       845
+     22/99     5.13G   0.05194   0.02392  0.006103   0.08196       698
+     22/99     5.13G   0.05194   0.02392  0.006103   0.08196       698
+     23/99     5.13G   0.05005   0.02377  0.005341   0.07916       687
+     23/99     5.13G   0.05064    0.0234  0.005436   0.07948       723
+     23/99     5.13G   0.05053    0.0236  0.005415   0.07955       554
+     23/99     5.13G   0.05053    0.0236  0.005415   0.07955       554
+  0%|                                                 | 0/14 [00:00<?, ?it/s]
+     24/99     5.13G   0.04973   0.02437  0.004854   0.07895       674
+     24/99     5.13G   0.05002   0.02429  0.005665   0.07997       664
+     24/99     5.13G   0.04977   0.02423  0.005848   0.07985       260
+     24/99     5.13G   0.04977   0.02423  0.005848   0.07985       260
+     25/99     5.13G   0.04859   0.02245  0.005168   0.07621       573
+     25/99     5.13G   0.04927   0.02287  0.005112   0.07725       765
+     25/99     5.13G   0.04966   0.02311  0.005775   0.07855       742
+     25/99     5.13G   0.04966   0.02311  0.005775   0.07855       742
+     26/99     5.13G   0.04992   0.02742  0.004299   0.08164       823
+     26/99     5.13G   0.04897   0.02359   0.00482   0.07739       715
+     26/99     5.13G   0.04929   0.02383  0.005351   0.07847       681
+     26/99     5.13G   0.04929   0.02383  0.005351   0.07847       681
+  0%|                                                 | 0/14 [00:00<?, ?it/s]
+     27/99     5.13G   0.04849   0.02376  0.005687   0.07794       620
+     27/99     5.13G   0.04878   0.02367  0.005477   0.07793       671
+     27/99     5.13G   0.04946   0.02318  0.005769   0.07842       290
+     27/99     5.13G   0.04946   0.02318  0.005769   0.07842       290
+     28/99     5.13G   0.04977   0.02421  0.005623   0.07961       742
+     28/99     5.13G   0.04987    0.0229  0.005244   0.07801       664
+     28/99     5.13G   0.04925   0.02249  0.005732   0.07748       638
+     28/99     5.13G   0.04925   0.02249  0.005732   0.07748       638
+     29/99     5.13G   0.04752   0.02283  0.004678   0.07503       664
+     29/99     5.13G   0.04781   0.02262  0.004848   0.07528       745
+     29/99     5.13G   0.04829   0.02279  0.004923   0.07601       628
+     29/99     5.13G   0.04821   0.02316  0.005341   0.07671       210
+     29/99     5.13G   0.04821   0.02316  0.005341   0.07671       210
+     30/99     5.13G   0.04703   0.02431  0.005315   0.07665       860
+     30/99     5.13G   0.04742    0.0231  0.005155   0.07567       786
+     30/99     5.13G   0.04823   0.02323  0.005486   0.07695       638
+     30/99     5.13G   0.04823   0.02323  0.005486   0.07695       638
+     31/99     5.13G    0.0491   0.02479  0.004219   0.07811       755
+     31/99     5.13G   0.04757   0.02273  0.004897    0.0752       649
+     31/99     5.13G   0.04809   0.02317   0.00502   0.07628       723
+     31/99     5.13G   0.04809   0.02317   0.00502   0.07628       723
+  0%|                                                 | 0/14 [00:00<?, ?it/s]
+     32/99     5.13G   0.04797   0.02284     0.005   0.07581       642
+     32/99     5.13G   0.04761   0.02357  0.004713   0.07589       750
+     32/99     5.13G    0.0477   0.02323  0.004827   0.07576       251
+     32/99     5.13G    0.0477   0.02323  0.004827   0.07576       251
+     33/99     5.13G   0.04598   0.02269  0.004202   0.07287       625
+     33/99     5.13G   0.04627   0.02305  0.004282    0.0736       770
+     33/99     5.13G   0.04657   0.02289  0.004649   0.07411       788
+     33/99     5.13G   0.04657   0.02289  0.004649   0.07411       788
+     34/99     5.13G   0.04635   0.02352  0.005005   0.07488       792
+     34/99     5.13G    0.0462    0.0233  0.004731   0.07423       728
+     34/99     5.13G   0.04648   0.02347  0.004989   0.07494       761
+     34/99     5.13G   0.04648   0.02347  0.004989   0.07494       761
+     35/99     5.13G   0.04899   0.02464  0.004358   0.07799       688
+     35/99     5.13G   0.04732    0.0237  0.004238   0.07525       705
+     35/99     5.13G   0.04674   0.02354  0.004277   0.07455       512
+     35/99     5.13G   0.04674   0.02354  0.004277   0.07455       512
+  0%|                                                 | 0/14 [00:00<?, ?it/s]
+     36/99     5.13G   0.04575   0.02399  0.004234   0.07397       724
+     36/99     5.13G   0.04609   0.02356  0.004063   0.07372       724
+     36/99     5.13G   0.04635   0.02305  0.004413   0.07382       209
+     36/99     5.13G   0.04635   0.02305  0.004413   0.07382       209
+     37/99     5.13G   0.04649   0.02459  0.004257   0.07533       722
+     37/99     5.13G   0.04606   0.02373  0.004111   0.07391       724
+     37/99     5.13G   0.04606   0.02373  0.004111   0.07391       724
+     37/99     5.13G   0.04606   0.02373  0.004111   0.07391       724
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960        0.49       0.407       0.413       0.275
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     40/99     5.13G    0.0464   0.02589  0.002942   0.07523       788       ize
+     40/99     5.13G   0.04497   0.02316  0.003957   0.07209       663       ize
+     40/99     5.13G   0.04497   0.02316  0.003957   0.07209       663       ize
+     40/99     5.13G   0.04497   0.02316  0.003957   0.07209       663       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     42/99     5.13G   0.04463   0.02383   0.00406   0.07252       612       ize
+     42/99     5.13G   0.04455   0.02299  0.003767   0.07131       697       ize
+     42/99     5.13G   0.04455   0.02299  0.003767   0.07131       697       ize
+     42/99     5.13G   0.04455   0.02299  0.003767   0.07131       697       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.386        0.41       0.333        0.23
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.443       0.412       0.374       0.248
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     46/99     5.13G   0.04438   0.02364  0.003514   0.07154       743       ize
+     46/99     5.13G   0.04402   0.02339  0.003674   0.07109       737       ize
+     46/99     5.13G   0.04402   0.02339  0.003674   0.07109       737       ize
+     46/99     5.13G   0.04402   0.02339  0.003674   0.07109       737       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.437       0.435       0.377       0.261
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960        0.41       0.395       0.347       0.226
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+  0%|                                                 | 0/14 [00:00<?, ?it/s]ize
+     50/99     5.13G   0.04349   0.02215  0.003378   0.06902       648       ize
+     50/99     5.13G   0.04349   0.02215  0.003378   0.06902       648       ize
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     51/99     5.13G   0.04288   0.02394  0.002953   0.06978       538       ize
+     51/99     5.13G   0.04304   0.02398  0.003096   0.07012       790       ize
+     51/99     5.13G   0.04304   0.02398  0.003096   0.07012       790       ize
+     51/99     5.13G   0.04304   0.02398  0.003096   0.07012       790       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.379       0.303       0.272       0.167
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.421       0.362       0.322       0.213
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     56/99     5.13G   0.04235   0.02225  0.002775   0.06737       610       ize
+     56/99     5.13G   0.04294   0.02249  0.002844   0.06828       767       ize
+     56/99     5.13G   0.04294   0.02249  0.002844   0.06828       767       ize
+     56/99     5.13G   0.04294   0.02249  0.002844   0.06828       767       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.384       0.296       0.253       0.159
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     61/99     5.13G   0.04204   0.02373  0.002792   0.06856       762       ize
+     61/99     5.13G   0.04133   0.02306  0.002656   0.06705       736       ize
+     61/99     5.13G   0.04133   0.02306  0.002656   0.06705       736       ize
+     61/99     5.13G   0.04133   0.02306  0.002656   0.06705       736       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.464       0.433       0.418       0.285
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.415       0.407       0.344       0.216
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     65/99     5.13G   0.04195   0.02179  0.002541   0.06628       727       ize
+     65/99     5.13G    0.0414   0.02317  0.002509   0.06708       801       ize
+     65/99     5.13G    0.0414   0.02317  0.002509   0.06708       801       ize
+     65/99     5.13G    0.0414   0.02317  0.002509   0.06708       801       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.493       0.388       0.375       0.247
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.488        0.44       0.432       0.297
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     69/99     5.13G   0.04048   0.02417  0.002826   0.06748       750       ize
+     69/99     5.13G   0.04053    0.0241  0.002736   0.06737       781       ize
+     69/99     5.13G   0.04053    0.0241  0.002736   0.06737       781       ize
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.453       0.518       0.446       0.315
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.505       0.401       0.391       0.275
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     74/99     5.13G   0.03963   0.02189  0.002386    0.0639       625       ize
+     74/99     5.13G   0.04002    0.0211  0.002699   0.06382       736       ize
+     74/99     5.13G   0.04002    0.0211  0.002699   0.06382       736       ize
+     74/99     5.13G   0.04002    0.0211  0.002699   0.06382       736       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.516       0.456       0.447       0.312
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.384       0.411        0.33       0.217
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.505       0.474       0.467       0.322
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     80/99     5.13G   0.03923   0.02239  0.002123   0.06374       684       ize
+     80/99     5.13G   0.03859   0.02054  0.002231   0.06136       517       ize
+     80/99     5.13G   0.03859   0.02054  0.002231   0.06136       517       ize
+     80/99     5.13G   0.03859   0.02054  0.002231   0.06136       517       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     83/99     5.13G   0.03926    0.0226  0.001986   0.06384       655       ize
+     83/99     5.13G   0.03951   0.02221  0.002045   0.06377       856       ize
+     83/99     5.13G   0.03951   0.02221  0.002045   0.06377       856       ize
+     83/99     5.13G   0.03951   0.02221  0.002045   0.06377       856       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.518       0.449       0.433       0.299
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.425        0.43       0.388       0.267
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     87/99     5.13G    0.0387   0.02216  0.001735   0.06259       759       ize
+     87/99     5.13G   0.03895   0.02214  0.002091   0.06318       829       ize
+     87/99     5.13G   0.03895   0.02214  0.002091   0.06318       829       ize
+     87/99     5.13G   0.03895   0.02214  0.002091   0.06318       829       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.491       0.492       0.449        0.32
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     90/99     5.13G   0.03739   0.02291  0.001497    0.0618       683       ize
+     90/99     5.13G   0.03828    0.0203  0.001733    0.0603       607       ize
+     90/99     5.13G   0.03828    0.0203  0.001733    0.0603       607       ize
+     90/99     5.13G   0.03828    0.0203  0.001733    0.0603       607       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.509        0.45       0.436       0.311
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     93/99     5.13G   0.03846   0.02135  0.001403   0.06121       748       ize
+     93/99     5.13G   0.03818   0.02198  0.001696   0.06186       759       ize
+     93/99     5.13G   0.03818   0.02198  0.001696   0.06186       759       ize
+     93/99     5.13G   0.03818   0.02198  0.001696   0.06186       759       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.471       0.527       0.465       0.334
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+     97/99     5.13G   0.03823   0.02296  0.001657   0.06284       618       ize
+     97/99     5.13G   0.03804   0.02252  0.001569   0.06213       899       ize
+     97/99     5.13G   0.03804   0.02252  0.001569   0.06213       899       ize
+     97/99     5.13G   0.03804   0.02252  0.001569   0.06213       899       ize
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+                 all         111         960       0.507       0.511       0.474       0.329
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize
+                 all         111         960        0.48       0.491       0.438       0.306
+               aging         111         255       0.484       0.565       0.503       0.373
+               other         111         705       0.476       0.417       0.374       0.239
+Optimizer stripped from runs/train/yolov7-custom96/weights/last.pt, 12.3MB
+Optimizer stripped from runs/train/yolov7-custom96/weights/best.pt, 12.3MB
+               Class      Images      Labels           P           R      mAPize
+               Class      Images      Labels           P           R      mAPize

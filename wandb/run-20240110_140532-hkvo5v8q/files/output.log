@@ -1,0 +1,59 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270037.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [       1.17      1.1662]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270043.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [     1.2178      1.2291]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270066.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [       1.08      1.1091      1.0031]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270068.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [     1.0744]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/images/A2303270069.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [     1.0678      1.2075      1.2347]
+[34m[1mval: [39m[22mWARNING ⚠️ /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/val/images/A2303210004.JPG: ignoring corrupt image/label: non-normalized or out of bounds coordinates [     1.0425      1.0575]
+[34m[1mtrain: [39m[22mScanning /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/train/labels.cache
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[34m[1mval: [39m[22mScanning /home/dxlab/jupyter/Minhwa/hyphae/yolov7/data/val/labels.cache...
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+Plotting labels to runs/detect/train42/labels.jpg...
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:90] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.001667, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7f2b77f121f0>
+Traceback (most recent call last):
+  File "/compuworks/anaconda3/envs/minhwa_py38/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1328, in __del__
+    self._shutdown_workers()
+  File "/compuworks/anaconda3/envs/minhwa_py38/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1301, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/compuworks/anaconda3/envs/minhwa_py38/lib/python3.8/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/compuworks/anaconda3/envs/minhwa_py38/lib/python3.8/multiprocessing/popen_fork.py", line 44, in wait
+    if not wait([self.sentinel], timeout):
+  File "/compuworks/anaconda3/envs/minhwa_py38/lib/python3.8/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/compuworks/anaconda3/envs/minhwa_py38/lib/python3.8/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt:
+500 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      1/500      8.82G        1.3      1.125       1.13        157        640: 1
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all        107        938      0.469      0.495       0.43      0.241
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
